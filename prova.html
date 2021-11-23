@@ -1,0 +1,45 @@
+<script>
+
+
+var saldo=0,intestatario="";
+const limiteScoperto=-500;
+
+
+    function test() {
+        return "test";
+    }
+
+    function init(nome) {
+        intestatario=nome;
+        saldo=0;
+    }
+
+    function preleva(somma){
+        if(saldo - somma > 0){
+            saldo = saldo - somma;
+            return somma;
+        }
+        return 0;
+        
+    }
+
+    function versa(somma){
+        saldo += somma;
+    }
+
+    function estrattoConto() {
+        return intestatario+": "+saldo+"€";
+    }
+
+init ("DD");
+document.write(estrattoConto());
+preleva(200);
+document.write(estrattoConto());
+preleva(400);
+document.write(estrattoConto());
+
+
+
+
+</script>
+
