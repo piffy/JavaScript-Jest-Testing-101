@@ -1,16 +1,23 @@
 # Level Up Tutorials JavaScript Testing 101
 
-## Help Support
+## Di che si tratta
 
-https://www.leveluptutorials.com/store
+Un piccolo aiuto per apprendere le basi del testing in Javascript tramite Jest
 
-## How To Use
+## Come partire
 
 ```
-git clone https://github.com/leveluptuts/Level-Up-JavaScript-Testing-101.git
-cd Level-Up-JavaScript-Testing-101
+git clone git@github.com:piffy/JavaScript-Jest-Testing-101.git
+cd JavaScript-Jest-Testing-101
 npm install
 npm test
 ```
 
-Then follow along on Youtube
+E poi segui le istruzioni
+
+
+### Credits
+
+Le basi di questo tutorial sono prese da 
+
+https://www.leveluptutorials.com/store
