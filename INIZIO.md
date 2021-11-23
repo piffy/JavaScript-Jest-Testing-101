@@ -38,20 +38,49 @@ Ran all test suites.
 
 ```
 
-## Comandi di Jest
+Il test di esempio verifica che il valore di ritorno della funzione test() sia la stringa "test". 
+
+
+## Funzionalità base di Jest
 
 Come tutto in Javascript, il test è una successione di funzioni richiamate in successione. 
 
-```describe```  (in italiano ```descrivi```)  delimita una test suite, quindi una serie di test collegati. Come parametro richiede il nome della test suite.
-```it ```   delimita un singolo test. Come parametro richiede il nome della test suite. In inglese, è d'uso che la prima parola sia "should"
-```expect``` (in italiano ```deve```) è la funzione che verifica il risultato. Le condizioni sono espresse da funzioni quali .toBe (uguaglianza stretta), toEqual (uguaglianza di valore), e moltissime altre. 
+- ```describe```  (in italiano ```descrivi```)  delimita una test suite, quindi una serie di test collegati. Come parametro richiede il nome della test suite.
+- ```it ```   delimita un singolo test. Come parametro richiede il nome della test suite. In inglese, è d'uso che la prima parola sia "should".
+- ```expect``` (in italiano ```deve```) è la funzione che verifica il risultato. Le condizioni sono espresse da funzioni quali .toBe (uguaglianza stretta), toEqual (uguaglianza di valore), e moltissime altre. 
 Queste tre funzioni sono ampiamente sufficienti per un funzionamento base di Jest.
-
-Il test di esempio verifica che il valore di ritorno della funzione test() sia la stringa "test".
 
 
 
 ### Al lavoro, parte 1
 
-Usando i comandi di cui sopra, scrivete un nuovo test che verifica il funzionamento dell'inizializzazione. Intestate il conto a Donanld Trumpe e verificate che la stampa risulti con il suo nome e contenga 0 Euro
+Usando i comandi di cui sopra, scrivete un nuova test suite che verifica il funzionamento dell'inizializzazione. Intestate il conto a "Donanld Trump" e verificate che la stampa del conto corrente risulti con il suo nome e contenga 0 Euro. Questo codice non contiene errori.
+
+### Al lavoro, parte 2
+
+Ora scrivere una nuova test suite che controlla la funzione ``` versa() ```. Versate dapprima 100 Euro e controllate il risultato, quindi aggiungete un secondo test in cui verate ulteriori 50 euro, senza riazzerarlo. Il codice contiene un errore, che dovrete rimuovere
+
+### Al lavoro, parte 3
+
+Scrivere una nuova test suite che controlla la funzione ``` preleva() ```.  Verificate tre condizioni: un prelievo di danaro quando il saldo è positivo, un prelievo di danaro che porta il conto in rosso (ma superiore al limite di scoperto) e un prelievo di danaro oltre il limite - in questo caso il prelievo non dovrebbe essere effettuato. Controllare anche la somma prelevata. 
+Anche in questo caso c'è un erore da rilevare
+
+## Conclusione
+
+Se volete vedere una possibile soluzione, salvate e committate il vostro lavoro, quindi date il comando 
+
+``` git checkout soluzione1 ```
+
+Troverete sia la soluzione in italiano sia la versione in cui il nome delle funzioni è in initaliano sia quella in cui le funzioni sono in inglese; il resto del tutorial utilizzerà appunto i nomi inglesi, ma se lo preferite potete copiare le righe 3..5 negli esercizi successivi e ripudiare la lingua della perfida Albiore.
+
+## Want some more?
+
+Se vi sentite pronti per la sfida successiva, date il comando 
+
+``` git checkout problema2  ```
+
+e leggete il file TDD.md
+
+
+
 
