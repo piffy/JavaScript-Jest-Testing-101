@@ -19,14 +19,16 @@ const limiteScoperto=-500;
     }
 
     function preleva(somma){
-        if(saldo - somma >= limiteScoperto);{
+        if(saldo - somma > limiteScoperto){
             saldo -= somma;
             return somma;
         }
+        return 0;
+        
     }
 
     function versa(somma){
-        saldo + somma;
+        saldo += somma;
     }
 
     function estrattoConto() {
