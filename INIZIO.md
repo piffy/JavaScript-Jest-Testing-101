@@ -23,7 +23,7 @@ In un terminale, posizionatevi all'interno di questa cartella. Nel caso di codiu
 ```
 npm test
 ```
-Questo lancia il sistema automatico di test di Jest, che viene lanciato automaticamente ogni volta che modificate un file. In questo caso, dovrebbe avere scritto qualcowsa tipo: 
+Questo lancia il sistema automatico di test di Jest, che viene lanciato automaticamente ogni volta che modificate un file. In questo caso, dovrebbe avere scritto qualcosa tipo: 
 
 ```
 PASS  src/App.test.js
@@ -43,7 +43,7 @@ Il test di esempio verifica che il valore di ritorno della funzione test() sia l
 
 ## Funzionalità base di Jest
 
-Come tutto in Javascript, il test è una successione di funzioni richiamate in successione. 
+Il test non è altro che una successione di funzioni.
 
 - ```describe```  (in italiano ```descrivi```)  delimita una test suite, quindi una serie di test collegati. Come parametro richiede il nome della test suite.
 - ```it ```   delimita un singolo test. Come parametro richiede il nome della test suite. In inglese, è d'uso che la prima parola sia "should".
