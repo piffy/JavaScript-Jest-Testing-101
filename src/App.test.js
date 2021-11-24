@@ -1,13 +1,10 @@
-import {init, test, estrattoConto, versa, preleva} from './App';
-
-const descrivi=describe;
-const deve=it;
-var aspettatiChe=expect;
+import {cesare} from './App';
 
 
-descrivi ('test', () => {
-    deve ('restituire test', () => {
-        aspettatiChe(test()).toBe('test');
+
+describe.skip ('la funzione esiste', () => {
+    test ('e restituisce una stringa', () => {
+        expect(typeof cesare()).toBe("string");
     })
 })
 
