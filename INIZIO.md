@@ -12,7 +12,7 @@ Aprite il vostro editor (Codium, VSCode, VS, Eclipse, ...) e date un'occhiata ai
 
 - index.html è un file che si limita a richiamare lo script App.js
 - App.js contiene codice già pronto per essere utilizzato con Jest, quindi in forma "modularizzata" prevista dallo standard ES6 (righe 1..5). Questo codice contiene diversi errori, che dovrete trovare e correggere.
-- App.test.js contiene lo scheletro del codice di test il codice di test. In particolare, per dare un tocco italianofilo, alcune istruzioni sono stati tradotti in italiano. 
+- App.test.js contiene lo scheletro del codice di test. In particolare, per dare un tocco italianofilo, alcune istruzioni sono state tradotte in italiano (v. sotto). 
 
 Tutti gli altri file al momento non servono ma è meglio lasciarli.
 
@@ -46,7 +46,7 @@ Il test di esempio verifica che il valore di ritorno della funzione test() sia l
 Il test non è altro che una successione di funzioni.
 
 - ```describe```  (in italiano ```descrivi```)  delimita una test suite, quindi una serie di test collegati. Come parametro richiede il nome della test suite.
-- ```it ```   delimita un singolo test. Come parametro richiede il nome della test suite. In inglese, è d'uso che la prima parola sia "should".
+- ```test``` delimita un singolo test. Come parametro richiede il nome della test suite. Ha come sinonimo ```it``` (in italiano ```deve```), in questo caso, in inglese, è d'uso che la prima parola del parametro sia "should".
 - ```expect``` (in italiano ```deve```) è la funzione che verifica il risultato. Le condizioni sono espresse da funzioni quali .toBe (uguaglianza stretta), toEqual (uguaglianza di valore), e moltissime altre. 
 Queste tre funzioni sono ampiamente sufficienti per un funzionamento base di Jest.
 
@@ -71,7 +71,7 @@ Se volete vedere una possibile soluzione, salvate e committate il vostro lavoro,
 
 ``` git checkout soluzione1 ```
 
-Troverete sia la soluzione in italiano sia la versione in cui il nome delle funzioni è in initaliano sia quella in cui le funzioni sono in inglese; il resto del tutorial utilizzerà appunto i nomi inglesi, ma se lo preferite potete copiare le righe 3..5 negli esercizi successivi e ripudiare la lingua della perfida Albiore.
+Troverete sia la soluzione in italiano sia la versione in cui il nome delle funzioni è in italiano sia quella in cui le funzioni sono in inglese; il resto del tutorial utilizzerà appunto i nomi inglesi, ma se lo preferite potete copiare le righe 3..5 negli esercizi successivi e ripudiare la lingua della perfida Albiore.
 
 ## Want some more?
 
@@ -80,7 +80,3 @@ Se vi sentite pronti per la sfida successiva, date il comando
 ``` git checkout problema2  ```
 
 e leggete il file TDD.md
-
-
-
-
