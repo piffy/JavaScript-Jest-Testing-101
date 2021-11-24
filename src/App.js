@@ -1,11 +1,16 @@
 exports.cesare = cesare
 
-    function cesare(str,spostamento) {
-        if(str==undefined) return "";
-        if(spostamento==undefined) spostamento=0;
-        let lettera=str.charCodeAt(0)+spostamento;
+    function cambia (lettera,spostamento) {
+        lettera = lettera+spostamento;
         lettera = (lettera >=91)  ?  lettera - 26 : lettera;
         lettera = (lettera <65)  ?  lettera + 26 : lettera;
-        let retStr= String.fromCharCode(lettera);
+        return String.fromCharCode(lettera);
+    }
+
+    function cesare(str,spostamento) {
+        let retStr="";
+        if(str==undefined) return retStr;
+        if(spostamento==undefined) spostamento=0;
+        retStr=retStr+cambia(str.charCodeAt(0),spostamento)
         return retStr;
     }

@@ -45,6 +45,15 @@ describe ('decodifica', () => {
     })
 })
 
+describe.skip ('più di una lettera', () => {
+    test ('di valori vari', () => {
+        expect(cesare("ABCD",1)).toBe("BCDE");
+        expect(cesare("ABCDE",2)).toBe("CDEFG");
+        expect(cesare("ABC",-3)).toBe("XYZ");
+    })
+})
+
+
 
 
 
