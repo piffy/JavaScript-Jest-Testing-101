@@ -28,8 +28,22 @@ describe ('modifica base', () => {
     })
 })
 
+describe ('spostamento multiplo', () => {
+    test ('di valori vari', () => {
+        expect(cesare("A",2)).toBe("C");
+        expect(cesare("B",3)).toBe("E");
+        expect(cesare("Z",4)).toBe("D");
+    })
+})
 
 
+describe ('decodifica', () => {
+    test ('con valori vari', () => {
+        expect(cesare("A",-1)).toBe("Z");
+        expect(cesare("B",-3)).toBe("Y");
+        expect(cesare("Z",-4)).toBe("V");
+    })
+})
 
 
 
