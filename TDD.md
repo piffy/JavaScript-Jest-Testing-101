@@ -47,12 +47,11 @@ Come accennato il primo test controlla solo che la funzione esista e restituisca
 
 ### Al lavoro, parte 2
 
-Il secondo test controlla che se la funzione riceve una stringa, restituisca la stringa immutata. Molto simile al precedente, non dovrebbe essere difficile.
-
+Il secondo test controlla che se la funzione riceve una stringa, restituisca la stringa immutata. Molto simile al precedente, non dovrebbe essere difficile, ma neppure banale.
 
 ### Al lavoro, parte 3
 
-
+Il terzo applica lo spostamaento di un posto a una stringa. Come prima approssimazione *potreste* scrivere 26 ```if``` o uno ```switch``` per far passare il test. Ma se non volete che Alan Turing si rivolti nella tomba, nella fase di refactoring  dovrete fare qualcosa di meglio. 
 
 ## Conclusione
 
