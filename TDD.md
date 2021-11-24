@@ -26,8 +26,8 @@ Questa volta il file App.js è praticamente vuoto, si limita a presentare una fu
 Il file App.test.js, invece, è pieno di test. Tuttavia, essi sono (momentaneamente) disabilitati, indicati dal metodo .skip. Infatti, eseguendo il solito npm test si ottiene
 
 ```
-Test Suites: 4 skipped, 0 of 4 total
-Tests:       4 skipped, 4 total
+Test Suites: 1 skipped, 0 of 1 total
+Tests:       10 skipped, 10 total
 Snapshots:   0 total
 Time:        0.17s, estimated 1s
 ```
@@ -41,25 +41,45 @@ Non è un sistema TDD "duro e puro", perché dovrebbe essere il programmatore st
 ## Cifrario di Cesare
 
 
-### Al lavoro, parte 1
+### Al lavoro, test 1
 
 Come accennato il primo test controlla solo che la funzione esista e restituisca una stringa. 
 
-### Al lavoro, parte 2
+### Al lavoro, test 2
 
-Il secondo test controlla che se la funzione riceve una stringa, restituisca la stringa immutata. Molto simile al precedente, non dovrebbe essere difficile, ma neppure banale.
+Il secondo test controlla che se la funzione riceve una stringa,  la restituisca. Molto simile al precedente, non dovrebbe essere difficile, ma neppure banale.
 
-### Al lavoro, parte 3
+### Al lavoro, test 3
 
-Il terzo applica lo spostamaento di un posto a una stringa. Come prima approssimazione *potreste* scrivere 26 ```if``` o uno ```switch``` per far passare il test. Ma se non volete che Alan Turing si rivolti nella tomba, nella fase di refactoring  dovrete fare qualcosa di meglio. 
+Il terzo applica lo spostamaento di un posto a una lettera. Come prima approssimazione *potreste* scrivere 26 ```if``` o uno ```switch``` per far passare il test. Ma se non volete che Alan Turing si rivolti nella tomba, nella fase di refactoring  dovrete fare qualcosa di meglio. 
+
+### Al lavoro, test 4
+
+Consideriamo il caso della lettera 'Z'
+
+### Al lavoro, test 5
+
+Ora si conserano spostamenti diversi da 1
+
+
+### Al lavoro, test 6
+
+éassare valori negativi può essere utile, magari per la decodifica di una stringa.
+
+
+### Al lavoro, test 7
+
+Ora consideriamo il caso in cui le stringhe abbiano più lettere. Si tratta di un cambio significativo - il consiglio è quello di rifattorizzare il codice pesantemente *prima* di affrontare questo test, magari spezzando la funzione in due. Risulterà molto più semplice.  
+
+
+### Al lavoro, test 8, 9, 10
+Si tratta di tre test che rendono più "robusta" l'implementazione. Nel primo caso, considera lo spostamento delle lettere minuscole, nel secondo occorre fare in modo che le non -lettere non siano spostate, e l'ultimo considera parametri sballati di un certo tipo. 
 
 ## Conclusione
 
 Se volete vedere una possibile soluzione, salvate e committate il vostro lavoro, quindi date il comando 
 
 ``` git checkout soluzione2 ```
-
-
 
 ## Want some more?
 
