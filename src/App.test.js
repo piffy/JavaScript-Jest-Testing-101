@@ -1,32 +1,32 @@
 import {cesare} from './App';
 
-describe ('la funzione esiste', () => {
+describe.skip ('la funzione esiste', () => {
     test ('e restituisce una stringa', () => {
         expect(typeof cesare()).toBe("string");
     })
 })
 
-describe ('non modifica', () => {
+describe.skip ('non modifica', () => {
     test ('la stringa se non richiesto', () => {
         expect(cesare("A")).toBe("A");
         expect(cesare("B")).toBe("B");
     })
 })
 
-describe ('modifica base - 1', () => {
+describe.skip ('modifica base - 1', () => {
     test ('sposta la lettera in avanti', () => {
-        expect(cesare("A",1)).toBe("B");
+        expect(cesare("A",1)).toBe("B");q
         expect(cesare("B",1)).toBe("C");
     })
 })
 
-describe ('modifica base - 2', () => {
+describe.skip ('modifica base - 2', () => {
     test ('anche per la Z', () => {
         expect(cesare("Z",1)).toBe("A");
     })
 })
 
-describe ('spostamento multiplo', () => {
+describe.skip ('spostamento multiplo', () => {
     test ('di valori vari', () => {
         expect(cesare("A",2)).toBe("C");
         expect(cesare("B",3)).toBe("E");
@@ -35,7 +35,7 @@ describe ('spostamento multiplo', () => {
 })
 
 
-describe ('decodifica', () => {
+describe.skip ('decodifica', () => {
     test ('con valori vari', () => {
         expect(cesare("A",-1)).toBe("Z");
         expect(cesare("B",-3)).toBe("Y");
@@ -43,7 +43,7 @@ describe ('decodifica', () => {
     })
 })
 
-describe ('più di una lettera', () => {
+describe.skip ('più di una lettera', () => {
     test ('di valori vari', () => {
         expect(cesare("ABCD",1)).toBe("BCDE");
         expect(cesare("ABCDE",2)).toBe("CDEFG");
@@ -52,17 +52,17 @@ describe ('più di una lettera', () => {
 })
 
 describe ('raffinamento', () => {
-    test ('sposta le minuscole', () => {
+    test.skip ('sposta le minuscole', () => {
         expect(cesare("abcd",1)).toBe("bcde");
         expect(cesare("abcde",2)).toBe("cdefg");
         expect(cesare("abc",-3)).toBe("xyz");
     })
-    test ('non spostare altro', () => {
+    test.skip ('non spostare altro', () => {
         expect(cesare("Hand, Cannot, Erase",1)).toBe("Iboe, Dboopu, Fsbtf");
         expect(cesare("uno due tre?",2)).toBe("wpq fwg vtg?");
         expect(cesare("òàùèé()",-3)).toBe("òàùèé()");
     })
-    test ('robustezza (parametri strani)', () => {
+    test.skip ('robustezza (parametri strani)', () => {
         expect(cesare("abcd",1000)).toBe("abcd");
         expect(cesare("abcd",-1000)).toBe("abcd");
         expect(cesare(12,-3)).toBe("");
