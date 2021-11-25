@@ -73,7 +73,7 @@ Ora consideriamo il caso in cui le stringhe abbiano più lettere. Si tratta di u
 
 
 ### Al lavoro, test 8, 9, 10
-Si tratta di tre test che rendono più "robusta" l'implementazione. Nel primo caso, considera lo spostamento delle lettere minuscole, nel secondo occorre fare in modo che le non -lettere non siano spostate, e l'ultimo considera parametri sballati di un certo tipo. 
+Si tratta di tre test che rendono più "robusta" l'implementazione. Nel primo caso, considera lo spostamento delle lettere minuscole; nel secondo occorre fare in modo che le non -lettere non siano spostate; infine, nel terzo, si gestiscono parametri sballati. 
 
 ## Conclusione
 
