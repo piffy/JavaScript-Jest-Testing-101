@@ -39,6 +39,20 @@ Seguite le istruzioni che trovate nei commenti di App.test.js, commitate e poi p
 
 ``` git checkout problema3a  ```
 
+## Step2 
+
+La soluzione mostrata nell'esempio precedente funziona, ma è un poco farraginosa: potete confrontate la vostra soluzione con la mia che trovate in App.nomock.js. Per fortuna Jest ci mette a disposizione un sistema di Mock che rende il tutto molto più semplice. 
+
+Il primo sistema consiste nello "spiare" un metodo senza cambiarlo. Questo consente di controllare quante volte è stato chiamato, con quali parametri e molto altro. La funzione si chiama, in modo intuitivo, spyOn. Un esempio di implementazione: 
+
+```
+const spy = jest.spyOn(App, 'nomeFunzione')
+```
+
+Il secondo sistema permette di sostituire l'implementazione della funzione in modo semplice. 
+
+
+
 
 
 ## Conclusione
@@ -46,6 +60,12 @@ Seguite le istruzioni che trovate nei commenti di App.test.js, commitate e poi p
 Abbiamo imparato a usare i seguenti matcher per expect(): 
 
 - .includes()
+- spy()
+- .toHaveBeenCalled() e .toHaveBeenCalledTimes([numero])
+- .toHaveBeenCalledWith([parametri])
+- .toHaveReturnedWith([valore restituito])
+
+
 
 
 

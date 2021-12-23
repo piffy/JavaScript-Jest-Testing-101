@@ -1,6 +1,6 @@
-# Livello 101
+# Livello 102
 
-## Obiettivo del primo passo
+## Obiettivo del secondo passo
 
 Apprendere le basi del testing con Jest
 
